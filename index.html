@@ -1,44 +1,43 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Grande Mark Ranch</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html> 
+<html data-ng-app="App" data-ng-controller="AppCtrl">
+  <head>
+    <title>AngularJS Animation Demo</title>
+    <link rel="stylesheet" type="text/css" href="./lib/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./lib/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="./app.css" />
+  </head>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <div id="title"><div id="center">
-        	<br />grandemarkranch.com under construction 
-        	<br />14461 Grande Mark Road
-        	<br />Oak Run CA, 96069
-        	<br />530-472-1400  
-        </div></div>
-        <div id="animate-area"></div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script type="text/javascript"> 
-        
-          $( document ).ready(function() {
-            console.log('jQuery:' + $.fn.jquery);
-            //$('body').css('backgroundImage', 'url(../img/unnamed.jpg)');
-          });
-        
-        </script>
-    </body>
+  <body ng-class="{'skip-animations':disabled}" class="ng-cloak">
+    <div id="wrapper">
+      <nav class="app-navigation">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+              <a class="brand" href="#">
+                <span class="app-loading-container">
+                  <span class="app-loading-animation" data-ng-class="status"></span>
+                </span>
+                GMR
+              </a>
+              <ol class="nav">
+                <li>
+                  <a href="#/about">about</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div data-ng-view id="ng-view" ng-animate="{enter: 'view-enter'}"></div>
+      </div>
+    </div>
+    <footer id="footer">
+      footer
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+    <script src="./app.js"></script> 
+  <body>
 </html>

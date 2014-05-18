@@ -1,6 +1,6 @@
 newRanch
 ========
 
-Angular or Ember SPA for grandemarkranch.com
+Angular SPA for grandemarkranch.com
 
-Under construction & coming soon!
+Coming soon!

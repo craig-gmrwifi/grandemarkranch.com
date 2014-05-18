@@ -1,0 +1,53 @@
+angular.module('App', [])
+
+  .controller('AppCtrl', function($rootScope, appLoading) {
+    $rootScope.topScope = $rootScope;
+    $rootScope.$on('$routeChangeStart', function() {
+      appLoading.loading();
+    });
+  })
+
+  .controller('home', function($scope, appLoading) {
+    appLoading.ready();
+  })
+  .controller('about', function($scope, appLoading) {
+    appLoading.ready();
+  })
+
+  .config(function($routeProvider) {
+    $routeProvider.when('/home', {
+      controller : 'home',
+      templateUrl : './templates/home_tpl.html'
+    }).when('/about', {
+      controller : 'about',
+      templateUrl : './templates/about_tpl.html'  
+    }).otherwise({
+      redirectTo: '/home'
+    });
+  })
+
+  .factory('appLoading', function($rootScope) {
+    var timer;
+    return {
+      loading : function() {
+        clearTimeout(timer);
+        $rootScope.status = 'loading';
+        if(!$rootScope.$$phase) $rootScope.$apply();
+      },
+      ready : function(delay) {
+        function ready() {
+          $rootScope.status = 'ready';
+          if(!$rootScope.$$phase) $rootScope.$apply();
+        }
+
+        clearTimeout(timer);
+        delay = delay == null ? 500 : false;
+        if(delay) {
+          timer = setTimeout(ready, delay);
+        }
+        else {
+          ready();
+        }
+      }
+    };
+  });
