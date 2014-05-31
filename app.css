@@ -8,7 +8,7 @@ h2 {
 }
 
 #wrapper {
-  padding-top:60px;
+  padding:60px;
 }
 
 .app-loading-container {
@@ -200,7 +200,8 @@ h2 {
 
 #ng-view {
   position:relative;
-  min-height:500px;
+  /*min-height:500px;
+  */
 }
 
 .view-enter, .view-leave, .slide-enter, .slide-leave, .wave-enter, .wave-leave {

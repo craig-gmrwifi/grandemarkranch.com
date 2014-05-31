@@ -6,11 +6,18 @@ angular.module('App', [])
       appLoading.loading();
     });
   })
-
+  
   .controller('home', function($scope, appLoading) {
     appLoading.ready();
   })
   .controller('about', function($scope, appLoading) {
+  	//$scope.$on('$viewContentLoaded', function() {});
+    appLoading.ready();
+  })
+  .controller('contact', function($scope, appLoading) {
+    appLoading.ready();
+  })
+  .controller('pics', function($scope, appLoading) {
     appLoading.ready();
   })
 
@@ -21,6 +28,12 @@ angular.module('App', [])
     }).when('/about', {
       controller : 'about',
       templateUrl : './templates/about_tpl.html'  
+    }).when('/contact', {
+      controller : 'contact',
+      templateUrl : './templates/contact_tpl.html'  
+    }).when('/pics', {
+      controller : 'pics',
+      templateUrl : './templates/pics_tpl.html'  
     }).otherwise({
       redirectTo: '/home'
     });
