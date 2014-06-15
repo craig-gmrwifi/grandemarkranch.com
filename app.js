@@ -1,4 +1,4 @@
-angular.module('App', [])
+angular.module('App', ['google-maps'])
 
   .controller('AppCtrl', function($rootScope, appLoading) {
     $rootScope.topScope = $rootScope;
@@ -16,6 +16,13 @@ angular.module('App', [])
   })
   .controller('contact', function($scope, appLoading) {
     appLoading.ready();
+   	$scope.map = {
+	  center: {
+	    latitude: 40.709708, 
+	    longitude: -121.909190
+	  },
+	  zoom: 12
+	};
   })
   .controller('pics', function($scope, appLoading) {
     appLoading.ready();

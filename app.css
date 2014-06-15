@@ -309,3 +309,5 @@ body.skip-animations * {
 .tweet-record.repeat-move.repeat-move-active {
   background:blue;
 }
+
+.angular-google-map-container { height: 600px; }
