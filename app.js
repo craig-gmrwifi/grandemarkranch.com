@@ -21,7 +21,12 @@ angular.module('App', ['google-maps'])
 	    latitude: 40.709708, 
 	    longitude: -121.909190
 	  },
-	  zoom: 12
+	  zoom: 14,
+	  options: {
+        disableDefaultUI: true,
+        scrollwheel: false,
+        mapTypeId: google.maps.MapTypeId.TERRAIN
+      },
 	};
   })
   .controller('pics', function($scope, appLoading) {
