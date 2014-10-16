@@ -1,4 +1,6 @@
 newRanch v2
 ========
 
-<del>Angular</del> Parallax SPA for grandemarkranch.com
+Parallax SPA for grandemarkranch.com
+
+using http://html5up.net/ template
