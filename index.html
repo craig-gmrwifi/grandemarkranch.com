@@ -1,53 +1,194 @@
-<!DOCTYPE html> 
-<html data-ng-app="App" data-ng-controller="AppCtrl">
-  <head>
-    <title>grande mark ranch</title>
-    <link rel="stylesheet" type="text/css" href="./lib/reset.css" />
-    <link rel="stylesheet" type="text/css" href="./lib/bootstrap/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="./lib/font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="./app.css" />
-    <meta charset="UTF-8">
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Modified for grandemarkranch.com 10/14
+	Brian Collins 
+-->
+<html>
+	<head>
+		<title>Grande Mark Ranch</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Grande Mark Ranch- All Natural Beef Since 1989." />
+		<meta name="keywords" content="Grande, Grand, Mark, Ranch, Grand Mark Ranch, Redding, CA, California, Beef, All Natural, Organic, Steer, Grass-Fed, Hormone-Free, Antiboitic-Free" /> 
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+			<link rel="stylesheet" href="css/style-normal.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<script>
+		  $( document ).ready(function() {
+		    $('#bc_pic').hover(
+		      function() {
+		    	$('#hover_text_for_contact').html("Brian - Web");
+		    	$('#hover_text_for_contact').css("color","black");
+		      },
+		      function() {
+		      	$('#hover_text_for_contact').css("color","white");
+		      }
+		    );
+		    $('#jack_pic').hover(
+		      function() {
+		    	$('#hover_text_for_contact').html("Jack - Owner");
+		    	$('#hover_text_for_contact').css("color","black");
+		      },
+		      function() {
+		    	$('#hover_text_for_contact').css("color","white");
+		      }
+		    );
+		    $('#kathy_pic').hover(
+		      function() {
+		    	$('#hover_text_for_contact').html("Kathy - Owner");
+		    	$('#hover_text_for_contact').css("color","black");
+		      },
+		      function() {
+		    	$('#hover_text_for_contact').css("color","white");
+		      }
+		    );
+		  });	
+	</script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map_canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(40.7133727 , -121.9052321),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>	
+	<style>
+	    #hover_text_for_contact {
+	    	color: white;
+	    	padding: 0px;
+	    }
+	    #map_canvas {
+	    	width: 400px;
+	    	height: 400px;
+	    }
+	</style>
   </head>
+	<body>
+		<!-- Header -->
+			<header id="header">
 
-  <body ng-class="{'skip-animations':disabled}" class="ng-cloak">
-    <div id="wrapper">
-      <nav class="app-navigation">
-        <div class="navbar navbar-inverse navbar-fixed-top">
-          <div class="navbar-inner">
-            <div class="container">
-              <a class="brand" href="#">
-                <span class="app-loading-container">
-                  <span class="app-loading-animation" data-ng-class="status"></span>
-                </span>
-                GMR
-              </a>
-              <ol class="nav">
-                <li>
-                  <a href="#/about">about</a>
-                </li>
-                <li>
-                  <a href="#/pics">pics</a>
-                </li>
-                <li>
-                  <a href="#/contact">contact</a>
-                </li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div class="container">
-        <div data-ng-view id="ng-view" ng-animate="{enter: 'view-enter'}"></div>
-      </div>
-    </div>
-    <footer id="footer">
-      © grandemarkranch.com 2014
-    </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
-    <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="/lib/angular-google-maps/lodash.underscore.js"></script>
-    <script src="/lib/angular-google-maps/angular-google-maps.min.js"></script>
-    <script src="./app.js"></script> 
-  <body>
+				<!-- Logo -->
+					<h1 id="logo">Grande Mark Ranch</h1>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#one">About Us</a></li>
+							<li><a href="#two">Who We Are</a></li>
+							<li><a href="#contact">Contact Us</a></li>
+						</ul>
+					</nav>
+
+			</header>
+			
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content container small">
+					<header>
+						<h2>Hello.</h2>
+					</header>
+					<p>Welcome to <strong>Big Picture</strong> a responsive site template designed
+					by <a href="http://html5up.net">HTML5 UP</a>, built on <strong>skel</strong>,
+					and released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>.</p>
+					<footer>
+						<a href="#one" class="button style2 down">More</a>
+					</footer>
+				</div>
+			</section>
+		
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>What I Do</h2>
+					</header>
+					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. 
+					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, 
+					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+				</div>
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
+		
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Who I Am</h2>
+					</header>
+					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. 
+					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, 
+					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+				</div>
+				<a href="#contact" class="button style2 down anchored">Next</a>
+			</section>
+			
+		<!-- Work -->
+
+			<section id="contact" class="main style3 primary">
+				<div class="content container">
+					<header style="padding-bottom:0px;">
+						<h2>Say Hello</h2>
+						<p>Let us know what is on your mind. Thanks!</p>
+						<div id="hover_text_for_contact">.</div>
+					</header>
+					
+					<!-- Lightbox Gallery  -->
+
+						<div class="container small gallery">
+							<div class="row flush images">
+								<div class="4u"><a href="mailto:collinsb40@gmail.com" id="bc_pic" class="image fit from-left"><img src="images/brian.JPG" /></a></div>
+								<div class="4u"><a href="mailto:jackcollins1949@gmail.com" id="jack_pic" class="image fit from-right"><img src="images/jack.JPG"></a></div>
+								<div class="4u"><a href="#" id="kathy_pic" class="image fit from-right"><img src="images/kathy.JPG"></a></div>
+							</div>
+						</div>
+						<center>
+							14461 Grande Mark Road	<br />
+							Oak Run CA, 96069		<br />
+							530-472-1400			<br />
+							<!--<div id="map_canvas"></div>-->
+						</center>
+
+				</div>
+			</section>
+			
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Icons -->
+				<!--
+					<ul class="actions">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; GMR</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			
+			</footer>
+
+	</body>
 </html>

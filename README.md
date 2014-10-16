@@ -1,4 +1,4 @@
-newRanch
+newRanch v2
 ========
 
-Angular SPA for grandemarkranch.com
+<del>Angular</del> Parallax SPA for grandemarkranch.com
