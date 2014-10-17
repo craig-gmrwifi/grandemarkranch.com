@@ -15,7 +15,7 @@
 			sectionTransitions: true,
 
 		// Fade in speed (in ms).
-			fadeInSpeed: 1000
+			fadeInSpeed: 2000
 
 	};
 
@@ -145,7 +145,7 @@
 						});
 			
 				// Work.
-					$('#work')
+					$('#contact')
 						.scrollwatch({
 							delay:		25,
 							range:		0.6,
@@ -178,7 +178,7 @@
 						});
 
 				// Contact.
-					$('#contact')
+				/*	$('#contact')
 						.scrollwatch({
 							delay:		25,
 							range:		0.5,
@@ -187,9 +187,9 @@
 							on:			function(t) { t.removeClass('inactive'); },
 							off:		function(t) { t.addClass('inactive'); }
 						});
-
+				*/
 			}
-
+			
 		// Events.
 		
 			// Change (skel).

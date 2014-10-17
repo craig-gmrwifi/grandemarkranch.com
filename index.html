@@ -3,8 +3,10 @@
 	Big Picture by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-	Modified for grandemarkranch.com 10/14
-	Brian Collins 
+	Modified for: 
+	grandemarkranch.com 
+	Brian Collins
+	10/14
 -->
 <html>
 	<head>
@@ -57,27 +59,10 @@
 		    );
 		  });	
 	</script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map_canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(40.7133727 , -121.9052321),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>	
 	<style>
 	    #hover_text_for_contact {
 	    	color: white;
 	    	padding: 0px;
-	    }
-	    #map_canvas {
-	    	width: 400px;
-	    	height: 400px;
 	    }
 	</style>
   </head>
@@ -105,9 +90,7 @@
 					<header>
 						<h2>Hello.</h2>
 					</header>
-					<p>Welcome to <strong>Big Picture</strong> a responsive site template designed
-					by <a href="http://html5up.net">HTML5 UP</a>, built on <strong>skel</strong>,
-					and released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>.</p>
+					<p>Welcome to <strong>Grande Mark Ranch</strong>, where... </p>
 					<footer>
 						<a href="#one" class="button style2 down">More</a>
 					</footer>
@@ -115,7 +98,7 @@
 			</section>
 		
 		<!-- One -->
-			<section id="one" class="main style2 right dark fullscreen">
+			<section id="one" class="main style2 right fullscreen">
 				<div class="content box style2">
 					<header>
 						<h2>What I Do</h2>
@@ -140,12 +123,12 @@
 				<a href="#contact" class="button style2 down anchored">Next</a>
 			</section>
 			
-		<!-- Work -->
+		<!-- Work (now contact)-->
 
-			<section id="contact" class="main style3 primary">
+			<section id="contact" class="main style3 secondary fullscreen">
 				<div class="content container">
 					<header style="padding-bottom:0px;">
-						<h2>Say Hello</h2>
+						<h2>Contact Us</h2>
 						<p>Let us know what is on your mind. Thanks!</p>
 						<div id="hover_text_for_contact">.</div>
 					</header>
@@ -154,18 +137,11 @@
 
 						<div class="container small gallery">
 							<div class="row flush images">
-								<div class="4u"><a href="mailto:collinsb40@gmail.com" id="bc_pic" class="image fit from-left"><img src="images/brian.JPG" /></a></div>
-								<div class="4u"><a href="mailto:jackcollins1949@gmail.com" id="jack_pic" class="image fit from-right"><img src="images/jack.JPG"></a></div>
-								<div class="4u"><a href="#" id="kathy_pic" class="image fit from-right"><img src="images/kathy.JPG"></a></div>
+								<div class="4u"><a href="mailto:jackcollins1949@gmail.com" id="jack_pic" class="image"><img src="images/jack.JPG"></a></div>
+								<div class="4u"><a href="mailto:" id="kathy_pic" class="image"><img src="images/kathy.JPG"></a></div>
+								<div class="4u"><a href="mailto:collinsb40@gmail.com" id="bc_pic" class="image"><img src="images/brian.JPG" /></a></div>
 							</div>
 						</div>
-						<center>
-							14461 Grande Mark Road	<br />
-							Oak Run CA, 96069		<br />
-							530-472-1400			<br />
-							<!--<div id="map_canvas"></div>-->
-						</center>
-
 				</div>
 			</section>
 			
@@ -177,7 +153,7 @@
 					<ul class="actions">
 						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+				   		<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
 						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
 						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
 						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
@@ -185,10 +161,16 @@
 
 				<!-- Menu -->
 					<ul class="menu">
-						<li>&copy; GMR</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>
+							14461 Grande Mark Road Oak Run CA 96069
+						</li>
+						<li>
+							530.472.1400
+						</li>
+						<li>
+							Design: <a href="http://html5up.net">HTML5 UP</a>
+						</li>
 					</ul>
-			
 			</footer>
-
 	</body>
 </html>
