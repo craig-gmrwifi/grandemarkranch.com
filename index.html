@@ -32,6 +32,17 @@
         <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
         <script>
           $( document ).ready(function() {
+            $('#craig_pic').hover(
+              function() {
+                $(this).addClass('transition');
+                $('#hover_text_for_contact').html("Craig | Rach Hand");
+                $('#hover_text_for_contact').css("color","black");
+              },
+              function() {
+                $('#hover_text_for_contact').css("color","white");
+                $(this).removeClass('transition');
+              }
+            );
             $('#bc_pic').hover(
               function() {
                 $(this).addClass('transition');
@@ -147,9 +158,10 @@
                     </header>
                         <div class="container small">
                             <div class="row flush images">
-                                <div class="4u"><a href="mailto:jackcollins1949@gmail.com" target="_top" id="jack_pic" class="image"><img src="images/jack.JPG"></a></div>
-                                <div class="4u"><a href="mailto:gmrgrassfed@gmail.com" target="_top" id="kathy_pic" class="image"><img src="images/kathy.JPG"></a></div>
-                                <div class="4u"><a href="mailto:collinsb40@gmail.com" target="_top" id="bc_pic" class="image"><img src="images/brian.JPG" /></a></div>
+                                <div class="3u"><a href="mailto:craig@grandemarkranch.com" target="_top" id="craig_pic" class="image"><img src="images/craig.JPG"></a></div>
+                                <div class="3u"><a href="mailto:jackcollins1949@gmail.com" target="_top" id="jack_pic" class="image"><img src="images/jack.JPG"></a></div>
+                                <div class="3u"><a href="mailto:gmrgrassfed@gmail.com" target="_top" id="kathy_pic" class="image"><img src="images/kathy.JPG"></a></div>
+                                <div class="3u"><a href="mailto:collinsb40@gmail.com" target="_top" id="bc_pic" class="image"><img src="images/brian.JPG" /></a></div>
                             </div>
                         </div>
                 </div>
@@ -161,7 +173,6 @@
                     <ul class="menu">
                         <li>14461 Grande Mark Road Oak Run CA 96069</li>
                         <li>209.863.8388</li>
-                        <li>530.472.1400</li>
                         <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                     </ul>
             </footer>
